@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "mcptool",
+  "version": "${version}",
+  "name": "MCPTool",
+  "description": "Official MCPTool client for Minecraft",
+  "authors": [
+    "wRRulos"
+  ],
+  "contact": {
+    "website": "https://wrrulos.dev/",
+    "repo": "https://github.com/wrrulos/mcptool-client"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mcptool/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.wrrulos.mcptool.client.MCPToolClient"
+    ],
+    "main": [
+      "dev.wrrulos.mcptool.MCPTool"
+    ]
+  },
+  "mixins": [
+    "mcptool.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
